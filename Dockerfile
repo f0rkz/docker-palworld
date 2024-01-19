@@ -14,4 +14,4 @@ RUN tar zxfv /tmp/envtmpl.tar.gz -C /tmp --no-same-owner
 RUN cp /tmp/envtmpl_0.3.0_linux_amd64/envtmpl /usr/local/bin && rm -rf /tmp/envtmpl*
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-# ENTRYPOINT [ "/entrypoint.sh" ]
+ENTRYPOINT [ "/entrypoint.sh" ]
