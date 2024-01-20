@@ -14,4 +14,4 @@ ln -s /opt/steamcmd/linux64/steamclient.so /home/steam/.steam/sdk64/steamclient.
 
 chown steam:steam -R /data /home/steam
 
-su - steam -c 'cd /data && bash PalServer.sh'
+su - steam -c 'cd /data && bash PalServer.sh -useperfthreads -NoAsyncLoadingThread -UseMultithreadForDS'
