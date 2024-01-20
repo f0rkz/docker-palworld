@@ -1,0 +1,11 @@
+version: "3"
+services:
+  palworld:
+    image: ghcr.io/f0rkz/docker-palworld:v0.0.2
+    restart: always
+    ports:
+      - "8211:8211/udp"
+    volumes:
+      - ./data:/data
+    environment:
+      foo: bar
